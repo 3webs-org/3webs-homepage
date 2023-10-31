@@ -1,0 +1,58 @@
+/* Top-level config */
+:root {
+    --brand-light: #45bceb;
+    --brand-dark: #0a2133;
+}
+
+/* Dark / Light mode variables */
+:root {
+    --fg-brand: var(--brand-dark);
+    --bg-brand: var(--brand-light);
+
+    --fg-contrast: var(--vp-c-black);
+    --bg-contrast: var(--vp-c-white);
+}
+
+.dark {
+    --fg-brand: var(--brand-light);
+    --bg-brand: var(--brand-dark);
+    
+    --fg-contrast: var(--vp-c-white);
+    --bg-contrast: var(--vp-c-black);
+}
+
+:root {
+    --vp-c-brand-1: color-mix(in srgb,
+        var(--fg-brand) 100%,
+        var(--bg-brand) 0%
+    );
+    --vp-c-brand-2: color-mix(in srgb,
+        var(--fg-brand) 80%,
+        var(--bg-brand) 20%
+    );
+    --vp-c-brand-3: color-mix(in srgb,
+        var(--fg-brand) 60%,
+        var(--bg-brand) 40%
+    );
+    --vp-c-brand-4: color-mix(in srgb,
+        var(--fg-brand) 40%,
+        var(--bg-brand) 60%
+    );
+
+    --vp-c-bg: color-mix(in srgb,
+        var(--bg-brand) 50%,
+        var(--bg-contrast) 50%
+    );
+    --vp-c-bg-alt: color-mix(in srgb,
+        var(--bg-brand) 25%,
+        var(--bg-contrast) 75%
+    );
+    --vp-c-bg-elv: color-mix(in srgb,
+        var(--bg-brand) 75%,
+        var(--fg-contrast) 25%
+    );
+    --vp-c-bg-soft: color-mix(in srgb,
+        var(--bg-brand) 40%,
+        var(--bg-contrast) 60%
+    );
+}

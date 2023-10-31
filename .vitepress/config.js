@@ -2,23 +2,24 @@ import { createLogger } from 'vite-logger';
 import { defineConfig } from 'vitepress';
 import { withPwa } from '@vite-pwa/vitepress';
 
+import { icons } from '../src/public/img/pwa/icons.json';
+
 const logger = createLogger('info', true);
 
 export default withPwa(defineConfig({
     srcDir: './src',
+    lang: 'en-US',
     title: '3WEBS LLC',
     description: 'TODO: Add description',
     cleanUrls: true,
     base: '/',
-    lastUpdated: false,
-    themeConfig: {
-        logo: undefined,
-        outline: 'deep',
-        nav: [
-        ],
-        search: {
-            provider: 'local'
-        }
+    lastUpdated: true,
+    appearance: true,
+    titleTemplate: false,
+    mpa: false,
+    ignoreDeadLinks: false,
+    rewrites: {
+        'public/:path*': '/:path*'
     },
     head: [
         [ 'meta', { charset: 'utf-8' } ],
@@ -26,24 +27,29 @@ export default withPwa(defineConfig({
         [ 'meta', { 'http-equiv': 'X-UA-Compatible', content: 'ie=edge,chrome=1' } ],
         [ 'meta', { name: 'Content-Type', content: 'text/html; charset=utf-8' } ],
         [ 'meta', { name: 'robots', content: 'index, follow' } ],
-/*        [ 'link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/img/apple-touch-icon.png' } ],
-        [ 'link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/img/favicon-32x32.png' } ],
-        [ 'link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/img/favicon-16x16.png' } ],
-        [ 'link', { rel: 'mask-icon', href: '/img/safari-pinned-tab.svg', color: '#5bbad5' } ],
-        [ 'link', { rel: 'shortcut icon', href: '/favicon.ico' } ],*/
+        [ 'link', { rel: 'apple-touch-icon', sizes: '512x512', href: '/img/favicon.png' } ],
+        [ 'link', { rel: 'icon', type: 'image/png', sizes: '512x512', href: '/img/favicon.png' } ],
+        [ 'link', { rel: 'mask-icon', href: '/img/favicon.png', color: '#0a2133' } ],
+        [ 'link', { rel: 'shortcut icon', href: '/img/favicon.png' } ],
         [ 'meta', { name: 'apple-mobile-web-app-title', content: '3WEBS LLC' } ],
         [ 'meta', { name: 'application-name', content: '3WEBS LLC' } ],
-        /*[ 'meta', { name: 'msapplication-TileColor', content: '#da532c' } ],
-        [ 'meta', { name: 'msapplication-config', content: '/browserconfig.xml' } ],*/
-        [ 'meta', { name: 'theme-color', content: '#ffffff' } ]
+        [ 'meta', { name: 'msapplication-TileColor', content: '#0a2133' } ],
+        [ 'meta', { name: 'msapplication-config', content: '/browserconfig.xml' } ],
+        [ 'meta', { name: 'theme-color', content: '#0a2133' } ]
     ],
-    appearance: true,
-    titleTemplate: false,
-    mpa: false,
-    rewrites: {
-        'public/:path*': '/:path*'
+    themeConfig: {
+        siteTitle: false,
+        logo: {
+            src: '/img/favicon.png',
+            alt: '3WEBS LLC'
+        },
+        outline: 'deep',
+        nav: [
+        ],
+        search: {
+            provider: 'local'
+        }
     },
-    ignoreDeadLinks: false,
     pwa: {
         injectRegister: 'script',
         workbox: {
@@ -55,11 +61,21 @@ export default withPwa(defineConfig({
             name: '3WEBS LLC',
             short_name: '3WEBS',
             description: 'TODO: Add description',
-            theme_color: '#ffffff',
-            background_color: '#ffffff',
+            theme_color: '#0a2133',
+            background_color: '#0a2133',
             display: 'browser',
             start_url: '/',
-            icons: []
+            icons: icons.map(icon => {
+                return {
+                    src: `/img/pwa/${icon.src}`,
+                    type: 'image/png', // All icons are png
+                    sizes: icon.sizes,
+                    purpose: 'any maskable'
+                };
+            })
         }
+    },
+    sitemap: {
+        hostname: 'https://3webs.org'
     }
 }));
