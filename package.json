@@ -1,0 +1,19 @@
+{
+  "name": "3webs-homepage",
+  "version": "1.0.0",
+  "description": "3webs.org homepage",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=4096 vitepress build",
+    "preview": "vitepress preview"
+  },
+  "author": "3webs-org",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@vite-pwa/vitepress": "^0.2.3",
+    "vite-logger": "^0.0.1",
+    "vitepress": "^1.0.0-rc.24"
+  }
+}

@@ -1,0 +1,61 @@
+name: Continuous Integration
+on:
+    push:
+        branches:
+          - main
+    pull_request:
+        types: 
+          - opened
+          - reopened
+          - synchronize
+          - ready_for_review
+        branches:
+          - main
+
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+jobs:
+    build:
+        name: Build
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout
+            uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+
+          - name: Use Node.js
+            uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3.8.1
+            with:
+                node-version: 18.x
+
+          - name: Cache node_modules
+            id: cache-npm-packages
+            uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84 # v3.3.2
+            env:
+              cache-name: cache-node_modules
+            with:
+              path: node_modules
+              key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
+
+          - name: Install Dependencies
+            if: ${{ steps.cache-npm-packages.outputs.cache-hit != 'true' }}
+            run: npm ci
+
+          - name: Build
+            run: npm run build
+
+          - name: Setup Pages
+            if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+            uses: actions/configure-pages@f156874f8191504dae5b037505266ed5dda6c382 # v3.0.6
+
+          - name: Upload artifact
+            uses: actions/upload-pages-artifact@a753861a5debcf57bf8b404356158c8e1e33150c  # v2.0.0
+            with:
+                path: '.vitepress/dist'
+
+          - name: Deploy to GitHub Pages
+            id: deployment
+            if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+            uses: actions/deploy-pages@9dbe3824824f8a1377b8e298bafde1a50ede43e5 # v2.0.4
