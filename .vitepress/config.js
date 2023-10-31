@@ -9,8 +9,8 @@ const logger = createLogger('info', true);
 export default withPwa(defineConfig({
     srcDir: './src',
     lang: 'en-US',
-    title: '3WEBS LLC',
-    description: 'TODO: Add description',
+    title: '3Webs',
+    description: 'Placeholder',
     cleanUrls: true,
     base: '/',
     lastUpdated: true,
@@ -48,6 +48,10 @@ export default withPwa(defineConfig({
         ],
         search: {
             provider: 'local'
+        },
+        footer: {
+            message: 'All rights reserved.',
+            copyright: 'Copyright © 2019-present 3WEBS LLC'
         }
     },
     pwa: {
@@ -58,9 +62,9 @@ export default withPwa(defineConfig({
             ]
         },
         manifest: {
-            name: '3WEBS LLC',
-            short_name: '3WEBS',
-            description: 'TODO: Add description',
+            name: '3Webs',
+            short_name: '3Webs',
+            description: 'Placeholder',
             theme_color: '#0a2133',
             background_color: '#0a2133',
             display: 'browser',
