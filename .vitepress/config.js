@@ -50,8 +50,8 @@ export default withPwa(defineConfig({
             provider: 'local'
         },
         footer: {
-            message: 'All rights reserved.',
-            copyright: 'Copyright © 2019-present 3WEBS LLC'
+            message: `<a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a>`,
+            copyright: `All rights reserved. Copyright © 2023${(new Date()).getFullYear() == 2023 ? '' : `-${(new Date()).getFullYear()}`} 3WEBS LLC`,
         }
     },
     pwa: {
