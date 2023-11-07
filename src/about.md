@@ -8,6 +8,10 @@
 
 A website to display information about Ethereum Improvement Proposals (EIPs).
 
+### 3Webs Browser
+
+To be announced.
+
 ### 3Webs Automoney
 
 To be announced.
