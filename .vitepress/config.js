@@ -45,6 +45,10 @@ export default withPwa(defineConfig({
         },
         outline: 'deep',
         nav: [
+            {
+                text: 'About',
+                link: '/about'
+            }
         ],
         search: {
             provider: 'local'
