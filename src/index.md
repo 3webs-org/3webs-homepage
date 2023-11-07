@@ -22,6 +22,6 @@ features:
     title: 3Webs Automoney
     details: Work in progress
   - icon: 🎮
-    title: Glap reloaded
-    details: Work in progress
+    title: Glap.io Reloaded
+    details: A remake of glap.io
 ---
