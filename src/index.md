@@ -17,11 +17,11 @@ features:
     link: https://github.com/3webs-org/eip-info-website
   - icon: 🌐
     title: 3Webs Browser
-    details: Work in progress
+    details: An opinionated open-source web browser. WIP
   - icon: 💰
     title: 3Webs Automoney
-    details: Work in progress
+    details: A better personal finance dashboard. WIP
   - icon: 🎮
     title: Glap.io Reloaded
-    details: A remake of glap.io
+    details: A remake of glap.io. WIP
 ---
