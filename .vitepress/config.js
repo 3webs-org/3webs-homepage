@@ -31,8 +31,8 @@ export default withPwa(defineConfig({
         [ 'link', { rel: 'icon', type: 'image/png', sizes: '512x512', href: '/img/favicon.png' } ],
         [ 'link', { rel: 'mask-icon', href: '/img/favicon.png', color: '#0a2133' } ],
         [ 'link', { rel: 'shortcut icon', href: '/img/favicon.png' } ],
-        [ 'meta', { name: 'apple-mobile-web-app-title', content: '3WEBS LLC' } ],
-        [ 'meta', { name: 'application-name', content: '3WEBS LLC' } ],
+        [ 'meta', { name: 'apple-mobile-web-app-title', content: '3Webs' } ],
+        [ 'meta', { name: 'application-name', content: '3Webs' } ],
         [ 'meta', { name: 'msapplication-TileColor', content: '#0a2133' } ],
         [ 'meta', { name: 'msapplication-config', content: '/browserconfig.xml' } ],
         [ 'meta', { name: 'theme-color', content: '#0a2133' } ]
@@ -41,7 +41,7 @@ export default withPwa(defineConfig({
         siteTitle: false,
         logo: {
             src: '/img/favicon.png',
-            alt: '3WEBS LLC'
+            alt: '3Webs Logo'
         },
         outline: 'deep',
         nav: [
