@@ -7,8 +7,9 @@ hero:
         src: /img/favicon.png
         alt: 3Webs logo
     actions:
-        - text: Learn more
-          link: /about
+      - theme: alt
+        text: View on GitHub
+        link: https://github.com/3webs-org
 features:
   - icon: 🌐
     title: Vector
