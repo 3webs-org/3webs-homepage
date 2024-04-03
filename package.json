@@ -13,6 +13,6 @@
     "@vite-pwa/vitepress": "^0.2.3",
     "cross-env": "^7.0.3",
     "vite-logger": "^0.0.1",
-    "vitepress": "^1.0.0-rc.24"
+    "vitepress": "^1.0.0"
   }
 }
