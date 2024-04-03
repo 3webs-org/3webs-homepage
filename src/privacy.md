@@ -1,16 +1,16 @@
 # Privacy Policy
 
-This document is effective as of the 'last updated' date shown at the bottom of this page.
+Effective immediately
 
 ## Introduction
 
-We (3WEBS LLC) believe that your privacy is important. This document outlines the information we may collect from you online, how we use it, how we protect it, your rights to your data, and how you can contact us to exercise those rights. This document is intended to be read alongside our [Terms of Service](./terms.md).
+We, 3WEBS LLC, believe that your privacy is important. This document outlines the information we may collect from you online, how we use it, how we protect it, your rights to your data, and how you can contact us to exercise those rights. This document is intended to be read alongside our [Terms of Service](./terms.md).
 
-If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us!
+If you have additional questions or require more information about our Privacy Policy, do not hesitate to [contact us](#contact-us)!
 
 ## Consent
 
-By interacting with 3WEBS LLC online, you hereby consent to our Privacy Policy and agree to its terms. Interactions include, but are not limited to:
+By interacting with us online, you hereby consent to our Privacy Policy and agree to its terms. Interactions include, but are not limited to:
 
 - Visiting our website
 - Creating an account or otherwise registering for or using our services
@@ -58,7 +58,7 @@ We may share your information with third parties for any of the reasons listed i
 
 ## Security
 
-We take reasonable precautions to protect your information. However, no method of transmission over the internet or method of electronic storage is 100% secure. We cannot guarantee the absolute security of your information. If you have reason to believe that your information has been compromised as a result of using our services, please contact us immediately so that we can investigate and take appropriate action.
+We take reasonable precautions to protect your information. However, no method of transmission over the internet or method of electronic storage is 100% secure. We cannot guarantee the absolute security of your information. If you have reason to believe that your information has been compromised as a result of using our services, please [contact us](#contact-us) immediately so that we can investigate and take appropriate action.
 
 ## Your Rights
 
@@ -68,7 +68,7 @@ We take reasonable precautions to protect your information. However, no method o
 Under the CCPA, among other rights, California consumers have the right to:
 
 1. Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.
-  - We believe that this document complies with (1). If you disagree, please contact us.
+  - We believe that this document is sufficient disclosure. If you disagree, please [contact us](#contact-us).
 2. Request that a business that sells a consumer's personal data, not sell the consumer's personal data
   - We do not sell your personal data.
 3. Request that a business delete any personal data about the consumer that a business has collected within a month of the request
@@ -105,11 +105,11 @@ Again, we believe that those consumer protections are positive, and extend them 
 
 While we believe that children should have the right to use and interact with the internet, we also recognize that they also represent a vulnerable population. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
 
-We do not knowingly collect any Personal Identifiable Information from children under the age of 13. Please contact us if you believe that your child under the age of 13 has provided this kind of information on our website, and we will try to remove such information from our records.
+We do not knowingly collect any Personal Identifiable Information from children under the age of 13. Please [contact us](#contact-us) if you believe that your child under the age of 13 has provided this kind of information on our website, and we will try to remove such information from our records.
 
 ## Changes to This Privacy Policy
 
-We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.
+We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. Changes are effective immediately.
 
 ## Contact Us
 
