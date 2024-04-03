@@ -9,8 +9,6 @@
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=4096 vitepress build",
     "preview": "vitepress preview"
   },
-  "author": "3webs-org",
-  "license": "UNLICENSED",
   "dependencies": {
     "@vite-pwa/vitepress": "^0.2.3",
     "cross-env": "^7.0.3",
