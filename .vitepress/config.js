@@ -1,10 +1,7 @@
-import { createLogger } from 'vite-logger';
 import { defineConfig } from 'vitepress';
 import { withPwa } from '@vite-pwa/vitepress';
 
 import { icons } from '../src/public/img/pwa/icons.json';
-
-const logger = createLogger('info', true);
 
 export default withPwa(defineConfig({
     srcDir: './src',
